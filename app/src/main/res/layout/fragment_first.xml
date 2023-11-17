@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="376dp"
+            android:layout_height="689dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/life2"
+                android:layout_width="90dp"
+                android:layout_height="196dp"
+                android:layout_marginBottom="8dp"
+                android:src="@android:drawable/btn_star"
+                app:layout_constraintBottom_toBottomOf="@+id/life1"
+                app:layout_constraintEnd_toEndOf="@+id/Poison2"
+                app:layout_constraintStart_toStartOf="@+id/Poison2"
+                app:layout_constraintTop_toTopOf="@+id/life1"
+                app:layout_constraintVertical_bias="0.333"
+                tools:src="@drawable/baseline_heart_broken_24" />
+
+            <ImageButton
+                android:id="@+id/life22"
+                android:layout_width="90dp"
+                android:layout_height="196dp"
+                android:src="@android:drawable/btn_star"
+                app:layout_constraintBottom_toBottomOf="@+id/life11"
+                app:layout_constraintEnd_toEndOf="@+id/Poison2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/Poison2"
+                app:layout_constraintTop_toTopOf="@+id/life11"
+                app:layout_constraintVertical_bias="0.0"
+                tools:src="@drawable/baseline_heart_broken_24" />
+
+            <Button
+                android:id="@+id/Poison2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="P-"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/Poison11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="P+"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Poison22"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/Poison22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="P-"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <ImageButton
+                android:id="@+id/arrowDown"
+                android:layout_width="380dp"
+                android:layout_height="42dp"
+                android:layout_marginBottom="344dp"
+                android:src="@android:drawable/arrow_down_float"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:src="@android:drawable/arrow_down_float" />
+
+            <ImageButton
+                android:id="@+id/arrowUp"
+                android:layout_width="380dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="272dp"
+                android:src="@android:drawable/arrow_up_float"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/Poison1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:text="P+"
+                app:layout_constraintEnd_toStartOf="@+id/Poison2"
+                app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/life1"
+                android:layout_width="90dp"
+                android:layout_height="196dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@android:drawable/btn_star_big_on"
+                app:layout_constraintBottom_toTopOf="@+id/arrowUp"
+                app:layout_constraintEnd_toEndOf="@+id/Poison1"
+                app:layout_constraintStart_toStartOf="@+id/Poison1"
+                app:layout_constraintTop_toBottomOf="@+id/Poison1" />
+
+            <ImageButton
+                android:id="@+id/life11"
+                android:layout_width="90dp"
+                android:layout_height="196dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@android:drawable/btn_star_big_on"
+                app:layout_constraintBottom_toTopOf="@+id/Poison11"
+                app:layout_constraintEnd_toEndOf="@+id/Poison11"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/Poison1"
+                app:layout_constraintTop_toBottomOf="@+id/arrowDown" />
+
+            <TextView
+                android:id="@+id/Text1"
+                android:layout_width="54dp"
+                android:layout_height="33dp"
+                android:text="25/0"
+                app:layout_constraintBottom_toTopOf="@+id/arrowUp"
+                app:layout_constraintEnd_toEndOf="@+id/Text2"
+                app:layout_constraintStart_toStartOf="@+id/Text2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.613" />
+
+            <TextView
+                android:id="@+id/Text2"
+                android:layout_width="54dp"
+                android:layout_height="33dp"
+                android:text="25/0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/life2"
+                app:layout_constraintStart_toEndOf="@+id/life1"
+                app:layout_constraintTop_toBottomOf="@+id/arrowDown"
+                app:layout_constraintVertical_bias="0.472" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
